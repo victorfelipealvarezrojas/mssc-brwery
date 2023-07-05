@@ -27,7 +27,7 @@ public class BeerServiceImpl implements BeerService {
 
     @Override
     public void updateBeer(UUID beerId,BeerDto beerDto) {
-
+        log.debug("Updating a beer...");
     }
 
     @Override
@@ -37,7 +37,8 @@ public class BeerServiceImpl implements BeerService {
 
     @Override
     public BeerDto saveNewBeer(BeerDto beerDto) {
-        return null;
+        BeerDto builder = (BeerDto) beerDto;
+        return builder;
     }
 
 
