@@ -2,12 +2,14 @@ package com.valvarez.msscbrewery.web.model;
 
 import lombok.Data;
 
+import javax.validation.constraints.NotBlank;
 import java.util.UUID;
 
 
 @Data
 public class CustomerDto {
     private UUID id;
+    @NotBlank
     private String name;
 
     public CustomerDto(UUID id, String name) {
