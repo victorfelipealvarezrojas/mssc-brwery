@@ -5,6 +5,8 @@ import lombok.Data;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Null;
 import javax.validation.constraints.Positive;
+import java.sql.Timestamp;
+import java.time.OffsetDateTime;
 import java.util.UUID;
 
 @Data
@@ -14,11 +16,16 @@ public class BeerDto {
     private String beerStyle;
     private Long upc;
 
-    public BeerDto(UUID id, String beerName, String beerStyle, Long upc) {
+    private OffsetDateTime createdDate;
+    private OffsetDateTime lastUpdatedDate;
+
+    public BeerDto(UUID id, String beerName, String beerStyle, Long upc, OffsetDateTime createdDate, OffsetDateTime lastUpdatedDate) {
         this.id = id;
         this.beerName = beerName;
         this.beerStyle = beerStyle;
         this.upc = upc;
+        this.createdDate = createdDate;
+        this.lastUpdatedDate = lastUpdatedDate;
     }
 
     public static BeerDtoBuilder builder() {
@@ -34,6 +41,9 @@ public class BeerDto {
         private String beerStyle;
         @Positive
         private Long upc;
+
+        private OffsetDateTime createdDate;
+        private OffsetDateTime lastUpdatedDate;
 
         public BeerDtoBuilder id(UUID id) {
             this.id = id;
@@ -55,8 +65,18 @@ public class BeerDto {
             return this;
         }
 
+        public BeerDtoBuilder createdDate(OffsetDateTime createdDate) {
+            this.createdDate = createdDate;
+            return this;
+        }
+
+        public BeerDtoBuilder lastUpdatedDate(OffsetDateTime lastUpdatedDate) {
+            this.lastUpdatedDate = lastUpdatedDate;
+            return this;
+        }
+
         public BeerDto build() {
-            return new BeerDto(this.id, this.beerName, this.beerStyle, this.upc);
+            return new BeerDto(this.id, this.beerName, this.beerStyle, this.upc, this.createdDate, this.lastUpdatedDate);
         }
 
         public String toString() {

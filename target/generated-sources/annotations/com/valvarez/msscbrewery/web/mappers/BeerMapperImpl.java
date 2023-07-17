@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-07-16T20:39:35-0400",
+    date = "2023-07-16T21:22:28-0400",
     comments = "version: 1.5.5.Final, compiler: javac, environment: Java 19.0.2 (Oracle Corporation)"
 )
 @Component
@@ -46,6 +46,8 @@ public class BeerMapperImpl implements BeerMapper {
             beer.beerStyle( Enum.valueOf( BeerStyleEnum.class, dto.getBeerStyle() ) );
         }
         beer.upc( dto.getUpc() );
+        beer.createdDate( dto.getCreatedDate() );
+        beer.lastUpdatedDate( dto.getLastUpdatedDate() );
 
         return beer.build();
     }

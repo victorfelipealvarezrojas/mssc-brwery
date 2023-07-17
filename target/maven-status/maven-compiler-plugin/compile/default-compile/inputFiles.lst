@@ -1,4 +1,5 @@
 C:\Users\victo\Documents\Programacion\javalearning\ms\gru\mssc-brewery\src\main\java\com\valvarez\msscbrewery\services\CustomerServiceImpl.java
+C:\Users\victo\Documents\Programacion\javalearning\ms\gru\mssc-brewery\src\main\java\com\valvarez\msscbrewery\domain\Customer.java
 C:\Users\victo\Documents\Programacion\javalearning\ms\gru\mssc-brewery\src\main\java\com\valvarez\msscbrewery\services\v2\BeerServiceV2.java
 C:\Users\victo\Documents\Programacion\javalearning\ms\gru\mssc-brewery\src\main\java\com\valvarez\msscbrewery\web\controller\MvcExceptionHandler.java
 C:\Users\victo\Documents\Programacion\javalearning\ms\gru\mssc-brewery\src\main\java\com\valvarez\msscbrewery\web\mappers\BeerMapper.java
@@ -6,6 +7,7 @@ C:\Users\victo\Documents\Programacion\javalearning\ms\gru\mssc-brewery\src\main\
 C:\Users\victo\Documents\Programacion\javalearning\ms\gru\mssc-brewery\src\main\java\com\valvarez\msscbrewery\MsscBreweryApplication.java
 C:\Users\victo\Documents\Programacion\javalearning\ms\gru\mssc-brewery\src\main\java\com\valvarez\msscbrewery\web\controller\v2\BeerControllerV2.java
 C:\Users\victo\Documents\Programacion\javalearning\ms\gru\mssc-brewery\src\main\java\com\valvarez\msscbrewery\web\model\BeerDto.java
+C:\Users\victo\Documents\Programacion\javalearning\ms\gru\mssc-brewery\src\main\java\com\valvarez\msscbrewery\web\mappers\CustomerMapper.java
 C:\Users\victo\Documents\Programacion\javalearning\ms\gru\mssc-brewery\src\main\java\com\valvarez\msscbrewery\services\BeerService.java
 C:\Users\victo\Documents\Programacion\javalearning\ms\gru\mssc-brewery\src\main\java\com\valvarez\msscbrewery\web\model\v2\BeerStyleEnum.java
 C:\Users\victo\Documents\Programacion\javalearning\ms\gru\mssc-brewery\src\main\java\com\valvarez\msscbrewery\web\controller\BeerController.java
