@@ -3,6 +3,7 @@ package com.valvarez.msscbrewery.web.model;
 import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 import java.util.UUID;
 
 
@@ -10,6 +11,7 @@ import java.util.UUID;
 public class CustomerDto {
     private UUID id;
     @NotBlank
+    @Size(min = 3, max = 100)
     private String name;
 
     public CustomerDto(UUID id, String name) {
