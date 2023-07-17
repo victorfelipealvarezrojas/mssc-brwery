@@ -58,7 +58,7 @@ public class BeerControllerTest {
     }
 
     @Test
-    public void handlePost() throws Exception  {
+    public void handlePost() throws Exception {
         BeerDto beerDto = validBeer;
         beerDto.setId(null);
         BeerDto savedDto = BeerDto.builder().id(UUID.randomUUID()).beerName("New Beer").build();
@@ -73,7 +73,7 @@ public class BeerControllerTest {
     }
 
     @Test
-    public void handleUpdate()  throws Exception {
+    public void handleUpdate() throws Exception {
         BeerDto beerDto = validBeer;
         beerDto.setId(null);
         String beerDtoJson = objectMapper.writeValueAsString(beerDto);
@@ -88,6 +88,11 @@ public class BeerControllerTest {
     }
 
     @Test
-    public void deleteBeer() {
+    public void deleteBeer() throws Exception {
+
+        //when
+        mockMvc.perform(delete("/api/v1/beer/" + UUID.randomUUID())
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isNoContent());
     }
 }
