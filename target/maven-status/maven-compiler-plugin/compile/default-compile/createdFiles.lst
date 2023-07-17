@@ -18,6 +18,7 @@ com\valvarez\msscbrewery\services\BeerService.class
 com\valvarez\msscbrewery\services\CustomerServiceImpl.class
 com\valvarez\msscbrewery\web\controller\v2\BeerControllerV2.class
 com\valvarez\msscbrewery\web\mappers\CustomerMapperImpl.class
+com\valvarez\msscbrewery\web\mappers\DateMapper.class
 com\valvarez\msscbrewery\web\mappers\BeerMapper.class
 com\valvarez\msscbrewery\web\model\CustomerDto.class
 com\valvarez\msscbrewery\web\model\v2\BeerDtoV2$BeerDtoV2Builder.class
